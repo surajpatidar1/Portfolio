@@ -1,0 +1,131 @@
+.home-image{
+    height: 275px;
+    width: 300px;
+    border-radius: 50%;
+    margin: 8rem 5rem 0rem 0rem;
+}
+.home-image img{
+  margin-top: -31%;
+  margin-right: 5rem;
+  height: 50vh;
+  width: 35vw;
+  padding-right: 1rem;
+  border-radius: 45%;
+}
+.background{
+    z-index: -1;
+}
+.navbar ul li::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  height: 2px;
+  background-color: #ff4fbb;
+  transition: width 0.3s ease, left 0.3s ease;
+  transform: translateX(-50%);
+  transform-origin: center;
+}
+.navbar ul li:hover::after{
+  width: 100%;
+  left: 50%;
+}
+.typewriter {
+  overflow: hidden;
+  border-right: .15em solid #ff4fbb;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .1em;
+  animation: typing 3s steps(30, end), blink-caret .75s step-end infinite;
+  width: fit-content;
+  max-width: 100%;
+}
+/* Typing animation */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* Blinking cursor animation */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #ff4fbb }
+}
+@keyframes drop-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  80% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.drop-in {
+  animation: drop-in 0.8s ease-out forwards;
+}
+
+/* @media (max-width:768px) {
+  .home-div h1 {
+    font-size: 2rem;
+    margin-right: 0rem;
+  }
+  .home-div{
+    margin-left: -1rem;
+  }
+  .home-div p{
+    font-size: 0.7rem;
+  }
+  .home-image{
+    height: 240px;
+    width: 250px;
+    margin: 8rem 0rem 0rem 0rem;
+}
+.home-image img{
+  margin-top: -31%;
+  margin-right: 5rem;
+  height: 50vh;
+  width: 35vw;
+  padding-right: 1rem;
+  border-radius: 45%;
+}
+.home-content{
+  gap: 1rem;
+}
+} */
+
+@media (max-width:480px) {
+  .menu{
+    margin-left: 20rem;
+  }
+  .home-content{
+    flex-direction: column;
+  }
+  .home-content h1{
+    font-size: 1rem
+  }
+  .home-div{
+    margin-right: 5rem;
+  }
+  .home-image{
+    height: 255px;
+    width: 250px;
+    border-radius: 50%;
+    margin: 0rem 1rem 5rem 0rem;
+}
+.home-image img{
+  margin-top: -31%;
+  height: 50vh;
+  width: 45vw;
+  border-radius: 45%;
+  margin-left: 25px;
+}
+}

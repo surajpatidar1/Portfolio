@@ -1,0 +1,27 @@
+ .education{
+    height: 60vh;
+    width: 60vw;
+    margin-top: 2rem;
+    background-color: rgb(195, 200, 200);
+    border-radius: 2rem;
+}
+
+@media (max-width:768px) {
+    .education{
+    margin: 2rem 2rem;
+   font-weight: 200;
+   font-size: 0.1rem;
+   overflow: scroll;
+}
+}
+@media (max-width:480px) {
+    .about{
+        flex-direction: column;
+    }
+    .education{
+    width: 90%;
+    margin: 2rem 2rem;
+   font-weight: 200;
+   overflow: scroll;
+}
+}
