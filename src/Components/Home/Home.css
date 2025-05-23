@@ -72,8 +72,8 @@
 .drop-in {
   animation: drop-in 0.8s ease-out forwards;
 }
-
-/* @media (max-width:768px) {
+ 
+ @media (max-width:768px) {
   .home-div h1 {
     font-size: 2rem;
     margin-right: 0rem;
@@ -100,7 +100,7 @@
 .home-content{
   gap: 1rem;
 }
-} */
+} 
 
 @media (max-width:480px) {
   .menu{
@@ -112,20 +112,18 @@
   .home-content h1{
     font-size: 1rem
   }
-  .home-div{
-    margin-right: 5rem;
-  }
+  
   .home-image{
     height: 255px;
     width: 250px;
     border-radius: 50%;
-    margin: 0rem 1rem 5rem 0rem;
+    margin: 5rem 1rem 5rem 0rem;
 }
 .home-image img{
   margin-top: -31%;
   height: 50vh;
   width: 45vw;
   border-radius: 45%;
-  margin-left: 25px;
+  margin-left: 2rem;
 }
 }
