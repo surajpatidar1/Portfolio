@@ -128,8 +128,11 @@ button {
     border-radius: 2rem;
     margin: 3rem auto;
     padding-bottom: 1rem;
-    margin-right: 0; /* prevent breaking layout on very small screens */
+    
   }
+  .form-row {
+ margin-left: 5px;
+}
 
   .right {
     height: 70vh;
@@ -139,7 +142,7 @@ button {
   }
 
   .icon {
-    margin-left: 9rem;
+    margin-left: 6rem;
   }
 
   button {
