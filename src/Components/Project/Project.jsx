@@ -22,7 +22,7 @@ const Project = () => {
           subtitle="Next JS"
           description="Next.js (App Router + TypeScript), TailwindCSS, Shadcn UI, Acertinity, Clerk Authentication, TypeScript API Routes, Neon.tech (PostgreSQL), Clipdrop AI, Gemini AI, Cloudinary."
           githubLink="https://github.com/surajpatidar1/Workwith.ai"
-          demoLink="https://workwith-ai.vercel.app"
+          demoLink="https://workwith-ai-3p43.vercel.app/"
           imageSrc="/ai.png"
         />
 
