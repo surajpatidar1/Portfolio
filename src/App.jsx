@@ -6,6 +6,7 @@ import Aos from 'aos'
 import './App.css'
 import 'aos/dist/aos.css';
 import { StoreContext } from './Store/Store'
+import Skills from './Components/Skills/Skills'
 
 const App = () => {
   useEffect(() => {
@@ -14,7 +15,7 @@ const App = () => {
 
   const {isOpen} = useContext(StoreContext);
   return (
-    <div >
+    <div className='w-full container overflow-y-scroll  scrollbar-hide' >
       {
         isOpen && <Slidebar/>
       }

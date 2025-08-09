@@ -19,30 +19,32 @@ const Slidebar = () => {
 
       {/* Sidebar */}
       <div
-        className={`fixed top-0 left-0 h-full w-64 slidebar bg-slate-400 text-slate-700 shadow-lg transform transition-transform duration-300 ease-in-out z-40 ${
-          isOpen ? 'translate-x-0' : '-translate-x-full'
-        }`}
+        className={`fixed top-0 left-0 h-full w-64 slidebar bg-[#101a2b]/80 backdrop-blur-md text-[#e0f0ff] shadow-xl transform transition-transform duration-300 ease-in-out z-40 ${
+        isOpen ? 'translate-x-0' : '-translate-x-full'
+            }`}
       >
 
-        <p className='text-2xl text-slate-950 my-6 mx-5 font-semibold shadow-md shadow-slate-600 flex items-center justify-center rounded-sm'>Suraj Patidar</p>
-        <hr />
-        <ul className="p-4 space-y-4 text-lg font-semibold">
-          <li className="drop-in " style={{ animationDelay: '0s' }}>
-            <a href="#" className='flex  items-center gap-2'><FaHome/> Home</a>
-          </li>
-          <li className="drop-in" style={{ animationDelay: '0.1s' }}>
-            <a href="#About" className='flex  items-center gap-2'><CiMenuKebab/> About</a>
-          </li>
-          <li className="drop-in" style={{ animationDelay: '0.2s' }}>
-            <a href="#Skills" className='flex  items-center gap-2'><SiHyperskill/> Skills</a>
-          </li>
-          <li className="drop-in" style={{ animationDelay: '0.3s' }}>
-            <a href="#Projects" className='flex  items-center gap-2'><VscProject/> Project</a>
-          </li>
-          <li className="drop-in" style={{ animationDelay: '0.4s' }}>
-            <a href="#Contact" className='flex  items-center gap-2'><RiContactsFill/> Contact</a>
-          </li>
-        </ul>
+        <p className='text-2xl text-[#81e6d9] my-6 mx-5 font-bold shadow-md flex items-center justify-center rounded-sm'>
+    Suraj Patidar
+  </p>
+  <hr className="border-[#374151]" />
+  <ul className="p-4 space-y-4 text-lg font-medium">
+    <li className="drop-in" style={{ animationDelay: '0s' }}>
+      <a href="#" className='flex items-center gap-2 hover:text-[#60a5fa] transition-colors'><FaHome /> Home</a>
+    </li>
+    <li className="drop-in" style={{ animationDelay: '0.1s' }}>
+      <a href="#About" className='flex items-center gap-2 hover:text-[#60a5fa] transition-colors'><CiMenuKebab /> About</a>
+    </li>
+    <li className="drop-in" style={{ animationDelay: '0.2s' }}>
+      <a href="#Skills" className='flex items-center gap-2 hover:text-[#60a5fa] transition-colors'><SiHyperskill /> Skills</a>
+    </li>
+    <li className="drop-in" style={{ animationDelay: '0.3s' }}>
+      <a href="#Projects" className='flex items-center gap-2 hover:text-[#60a5fa] transition-colors'><VscProject /> Project</a>
+    </li>
+    <li className="drop-in" style={{ animationDelay: '0.4s' }}>
+      <a href="#Contact" className='flex items-center gap-2 hover:text-[#60a5fa] transition-colors'><RiContactsFill /> Contact</a>
+    </li>
+  </ul>
       </div>
     </>
   )
