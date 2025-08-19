@@ -13,7 +13,7 @@ const Project = () => {
           subtitle="MERN STACK"
           description="JavaScript, MongoDB, Express.js, Passport.js, React.js, Bootstrap, Cloudinary"
           githubLink="https://github.com/surajpatidar1/booking--webapplication"
-          demoLink="#"
+          demoLink="https://booking-webapplication.onrender.com/listings"
           imageSrc="/booking .png"
         />
 
